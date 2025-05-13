@@ -14,12 +14,13 @@ namespace TesteEmprego.Questoes
                 if (entrada == null)
                 {
                     Console.WriteLine("Entrada inválida. Tente novamente.");
+                    continue;
                 }
 
                 if (!int.TryParse(entrada, out numero))
                 {
                     Console.WriteLine("Entrada inválida pois não é um número inteiro. Tente novamente.");
-                    return;
+                    continue;
                 }
 
                 valido = true;

@@ -2,7 +2,6 @@ namespace TesteEmprego.Questoes
 {
     public class Questao1
     {
-
         public static void CalcularSoma()
         {
             int INDICE = 13, SOMA = 0, K = 0;
@@ -10,9 +9,18 @@ namespace TesteEmprego.Questoes
             while(K < INDICE){
                 K = K + 1; 
                 SOMA = SOMA + K;
-                Console.WriteLine(SOMA);
+
+                if(K == INDICE)
+                {
+                    Console.Write(SOMA);
+                }
+                else
+                {
+                    Console.Write(SOMA + ", ");
+                }
             }
 
+            Console.WriteLine("");
             Console.WriteLine($"VALOR FINAL DA SOMA = {SOMA}");
         }
     }

@@ -31,6 +31,17 @@ namespace TesteEmprego.Questoes
 
             dados.RemoveAll(fatur => fatur.valor <= 0);
 
+            /* Outra forma de fazer seria:
+            List<FaturamentoDia> dadosNaoZerados = [];
+            foreach (FaturamentoDia fatur in dados)
+            {
+                if(fatur.valor > 0)
+                {
+                    dadosNaoZerados.Add(fatur);
+                }
+            }
+            dados = dadosNaoZerados;*/
+
             if (dados.Count == 0)
             {
                 Console.WriteLine("Não há dias com faturamento registrado.");
@@ -44,7 +55,7 @@ namespace TesteEmprego.Questoes
 
             Console.WriteLine($"Menor faturamento: R$ {menor:F2}");
             Console.WriteLine($"Maior faturamento: R$ {maior:F2}");
-            Console.WriteLine($"Dias com faturamento acima da média ({media:F2}): {diasAcimaDaMedia}");
+            Console.WriteLine($"Dias com faturamento acima da média mensal (R$ {media:F2}): {diasAcimaDaMedia}");
         }
     }
 }

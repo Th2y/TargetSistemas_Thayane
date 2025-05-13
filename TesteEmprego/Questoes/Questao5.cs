@@ -14,7 +14,7 @@ namespace TesteEmprego.Questoes
                 if (textoOriginal == null || textoOriginal.Length == 0)
                 {
                     Console.WriteLine("Palavra inválida! Tente novamente.");
-                    return;
+                    continue;
                 }
             }
 

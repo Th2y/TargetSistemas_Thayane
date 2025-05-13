@@ -19,7 +19,7 @@ namespace TesteEmprego.Questoes
                 total += valor;
             }
 
-            Console.WriteLine($"Faturamento Total: R$ {total:F2}\n");
+            Console.WriteLine($"Faturamento Total: R$ {total:F2}");
 
             foreach (var estado in faturamentoEstados)
             {
